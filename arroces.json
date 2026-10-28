@@ -1,0 +1,22 @@
+{
+  "_instrucciones": "Rellena cada variedad con tus propias palabras a partir de tus apuntes de curso. No hace falta copiar frases literales de ningún PDF: basta con los datos numéricos y una descripción breve tuya. Añade o quita variedades libremente.",
+
+  "variedades": {
+    "ejemplo_bomba": {
+      "nombre": "Bomba",
+      "tipo": "redondo",
+      "absorcion_relativa": "baja-media",
+      "minutos_apertura_aprox": 8,
+      "resistencia_sobrecoccion": "alta",
+      "notas": "Arroz seguro, aguanta bien el exceso de cocción. Poca transmisión de sabor comparado con otras variedades."
+    },
+    "ejemplo_senia": {
+      "nombre": "Sénia",
+      "tipo": "grano_medio",
+      "absorcion_relativa": "muy_alta",
+      "minutos_apertura_aprox": 7,
+      "resistencia_sobrecoccion": "baja",
+      "notas": "Muy buena transmisión de sabor pero se pasa fácil. Vigilar de cerca los últimos minutos."
+    }
+  }
+}

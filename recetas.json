@@ -1,0 +1,186 @@
+{
+  "_instrucciones": "Una entrada por receta. 'ingredientes_base' son las cantidades (SIN líquido) para las 'raciones_base' indicadas; el agente las escala según las raciones que pidas. El líquido NUNCA se guarda aquí como cifra fija: siempre se calcula aparte con calcular_liquido_total, según el diámetro de la paella y el tipo de fuego del momento (misma receta, distinto equipo = distinto líquido). 'pasos' es el método, en tus palabras.",
+  "_convencion_raciones": "Cuando la fuente original no indique raciones, calcular raciones_base = gramos_arroz / 100 (100 g de arroz crudo por persona).",
+
+  "recetas": {
+    "ejemplo_paella_valenciana": {
+      "nombre": "Paella Valenciana",
+      "raciones_base": 4,
+      "variedad_arroz_recomendada": "ejemplo_bomba",
+      "ingredientes_base": {
+        "arroz_gr": 400,
+        "pollo_kg": 0.65,
+        "conejo_kg": 0.44,
+        "judia_verde_kg": 0.3,
+        "garrofon_kg": 0.1,
+        "tomate_kg": 0.1,
+        "pimenton_gr": 2.5,
+        "azafran_gr": 0.24,
+        "aceite_litros": 0.12,
+        "sal_gr": 25.2
+      },
+      "pasos": [
+        "Sofreír el pollo y el conejo en el aceite",
+        "Añadir la verdura y sofreír",
+        "Añadir el tomate rallado",
+        "Añadir el pimentón, remover rápido para que no se queme",
+        "Mojar con el caldo/agua, dejar cocer las carnes",
+        "Rectificar de sal, añadir el azafrán",
+        "Echar el arroz en forma de cruz, repartir bien",
+        "Cocer a fuego fuerte los primeros minutos, bajar después",
+        "Dejar reposar unos minutos antes de servir"
+      ],
+      "notas_generales": "Ajustar el punto de pimentón al gusto; si se añade con el sofrito muy caliente amarga."
+    },
+    "valenciana": {
+      "nombre": "La Valenciana",
+      "raciones_base": 4,
+      "equipo_original": {
+        "diametro_cm": 60,
+        "tipo_fuego": "gas, quemador 2 aros tubo plano",
+        "minutos_coccion": 18
+      },
+      "ingredientes_base": {
+        "arroz_dinamita_gr": 400,
+        "pollo_gr": 180,
+        "conejo_gr": 130,
+        "pato_gr": 40,
+        "judia_plana_ferraura_gr": 60,
+        "alcachofas_unidades": 2,
+        "agua_coccion_previa_gr": 1200,
+        "agua_principal_gr": 2400,
+        "tomate_gr": 80,
+        "aove_gr": 120,
+        "pimenton_dulce_gr": 6.5
+      },
+      "ingredientes_al_gusto": ["Garrofón", "Baqueta"],
+      "pasos": [
+        "Dorar las carnes y sofreír la verdura",
+        "Reducir el tomate y añadir el pimentón sin dejar que se queme",
+        "Incorporar el agua de preparación, marcar el nivel de trabajo y cocer con las baquetas",
+        "Antes del arroz, comprobar terneza y líquido remanente",
+        "Repartir el arroz y cocinar unos 18 minutos, verificando el punto del grano y la desaparición del líquido libre"
+      ],
+      "notas_generales": "Las dos partidas de agua cumplen funciones distintas: medir el nivel después de la cocción previa, no verter ambas cantidades como si todo debiera permanecer al echar el arroz. Fuente: Álex del Vicio."
+    },
+    "chuleton_vaca": {
+      "nombre": "Chuletón de vaca vieja y pimientos de Padrón",
+      "raciones_base": 4,
+      "equipo_original": {
+        "diametro_cm": 60,
+        "tipo_fuego": "gas, quemador 2 aros tubo plano",
+        "minutos_coccion": 17
+      },
+      "ingredientes_base": {
+        "arroz_dinamita_gr": 400,
+        "chuleton_vaca_gr": 1000,
+        "fondo_gr": 2400,
+        "tomate_gr": 80,
+        "aove_gr": 80,
+        "pimenton_dulce_gr": 6.5
+      },
+      "ingredientes_al_gusto": ["Pimientos de Padrón"],
+      "pasos": [
+        "Marcar el chuletón y terminar su cocción a la brasa según el punto buscado",
+        "Reducir el tomate, incorporar el pimentón y añadir el fondo",
+        "Distribuir el arroz y cocinar unos 17 minutos, vigilando la uniformidad del hervor",
+        "Coordinar el servicio con la carne"
+      ],
+      "notas_generales": "Elegir el fondo según la intensidad deseada. Cocinar el chuletón a la brasa hasta el punto elegido por separado; su cocción no se deduce del tiempo del grano. Fuente: Álex del Vicio."
+    },
+    "gambon_huevo_trufa": {
+      "nombre": "Gambón, huevo frito y trufa",
+      "raciones_base": 4,
+      "equipo_original": {
+        "diametro_cm": 60,
+        "tipo_fuego": "gas, quemador 2 aros tubo plano",
+        "minutos_coccion": 18
+      },
+      "ingredientes_base": {
+        "arroz_dinamita_gr": 400,
+        "gambones_medianos_unidades": 4,
+        "huevos_fritos_unidades": 4,
+        "fumet_gr": 2400,
+        "tomate_gr": 80,
+        "aove_gr": 120,
+        "pimenton_dulce_gr": 6.5
+      },
+      "ingredientes_al_gusto": ["Trufa"],
+      "pasos": [
+        "Preparar una base reducida de tomate y pimentón, añadir el fumet",
+        "Pasar los gambones por la brasa y organizar su incorporación según tamaño y cocción",
+        "Añadir el arroz y cocinar unos 18 minutos",
+        "Al servir, colocar los huevos fritos y rallar la trufa"
+      ],
+      "notas_generales": "Definir la cantidad de trufa y preparar los huevos para el servicio. Ajustar el paso de los gambones por la brasa a su tamaño; evitar prolongar su cocción innecesariamente. Fuente: Álex del Vicio."
+    },
+    "pato_foie_trompetas": {
+      "nombre": "Arroz de pato, foie y trompetas",
+      "raciones_base": 4,
+      "equipo_original": {
+        "diametro_cm": 60,
+        "tipo_fuego": "gas, quemador 2 aros tubo plano",
+        "minutos_coccion": 18
+      },
+      "ingredientes_base": {
+        "arroz_dinamita_gr": 400,
+        "muslos_pato_confitado_unidades": 2,
+        "trompetas_muerte_gr": 45,
+        "fondo_gr": 2400,
+        "tomate_gr": 80,
+        "aove_gr": 80,
+        "pimenton_dulce_gr": 6.5
+      },
+      "ingredientes_al_gusto": ["Foie", "Martini (rojo)"],
+      "pasos": [
+        "Si es necesario, hidratar las setas y reservar el líquido medido",
+        "Sellar el foie y apartarlo; sofreír las setas",
+        "Reducir el tomate y añadir el pimentón",
+        "Mojar con Martini rojo y, después, con el fondo",
+        "Repartir el arroz y cocinar unos 18 minutos",
+        "Coordinar la reincorporación del pato y del foie según su temperatura y textura"
+      ],
+      "notas_generales": "Comprobar si las setas necesitan hidratación y medir el agua que se vaya a aprovechar. Decidir la reincorporación del pato y del foie para calentarlos sin secarlos ni deshacerlos. Fuente: Álex del Vicio."
+    },
+    "paella_verduras": {
+      "nombre": "Paella de verduras",
+      "raciones_base": 4,
+      "equipo_original": {
+        "minutos_coccion": 18,
+        "minutos_coccion_max": 20
+      },
+      "ingredientes_base": {
+        "arroz_gr": 300,
+        "berenjena_unidades": 1,
+        "calabacin_mediano_unidades": 1,
+        "cebolla_unidades": 1,
+        "judias_verdes_gr": 250,
+        "pimiento_verde_unidades": 0.5,
+        "pimiento_rojo_unidades": 0.5,
+        "coliflor_unidades": 0.25,
+        "esparragos_verdes_manojos": 0.5,
+        "ajos_tiernos_atados": 4,
+        "habas_tiernas_gr": 750,
+        "alcachofas_unidades": 4,
+        "setas_champinones_gr": 250,
+        "espinacas_manojos": 2,
+        "acelgas_atados": 1,
+        "tomates_rallados_unidades": 2,
+        "ajo_picado_dientes": 2,
+        "pimenton_cucharadas": 1,
+        "aceite_gr": 90
+      },
+      "ingredientes_al_gusto": ["Azafrán", "Colorante", "Sal"],
+      "pasos": [
+        "Lavar, cortar y escurrir las verduras",
+        "Sofreírlas por tandas y por resistencia, controlando la humedad",
+        "Añadir ajo, pimentón y tomate y sofreír",
+        "Cocer las verduras con agua unos 10 minutos",
+        "Antes del arroz, ajustar el líquido real al volumen calibrado; la cocción previa exige medir la reducción",
+        "Añadir el arroz; como punto de partida, 8 minutos iniciales de hervor vivo y descenso progresivo hasta 18-20 minutos totales, ajustando por variedad y punto",
+        "Reposar brevemente"
+      ],
+      "notas_generales": "Los 90 g de aceite corresponden al 30% del peso del arroz. La carga de verdura es abundante: comprobar que el recipiente permita repartirla sin amontonar, y mantener controlada el agua liberada. Fuente: Álex del Vicio."
+    }
+  }
+}
